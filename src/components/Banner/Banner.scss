@@ -3,14 +3,14 @@
 
 @font-face{
     font-family: 'Banner';
-    src: url('../../fonts/Saira_Stencil_One/SairaStencilOne-Regular.ttf');
+    src: url($sairaStencil);
 }
 .Banner{
     @include headerFooter;
     h1{
         font-family: 'Banner';
         font-size: 4.5em;
-        margin: 0;
+        margin: -25px 0;
         padding: 0;
     }
 }

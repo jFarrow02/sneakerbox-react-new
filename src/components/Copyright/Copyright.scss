@@ -1,0 +1,10 @@
+@import '../../styles/variables.scss';
+
+@font-face{
+    font-family: 'Saria';
+    src: url($sairaStencil);
+}
+
+.Copyright{
+    font-family: 'Saria';
+}
