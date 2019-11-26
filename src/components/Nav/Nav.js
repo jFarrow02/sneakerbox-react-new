@@ -7,7 +7,6 @@ const Nav = ()=>{
 
     return(
         <nav className='Nav'>
-            Nav goes here
             {
                 linkConfig.map((conf, idx)=>{
                     return(

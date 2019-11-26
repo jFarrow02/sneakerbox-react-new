@@ -1,5 +1,7 @@
-$deeppink : deeppink;
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
 
 .Footer{
-    border: 1px solid $deeppink;
+    @include headerFooter;
+    background-color: $darkRed;
 }

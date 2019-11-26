@@ -1,5 +1,16 @@
-$darkblue : darkblue;
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
 
+@font-face{
+    font-family: 'Banner';
+    src: url('../../fonts/Saira_Stencil_One/SairaStencilOne-Regular.ttf');
+}
 .Banner{
-    border: 1px solid $darkblue;
+    @include headerFooter;
+    h1{
+        font-family: 'Banner';
+        font-size: 4.5em;
+        margin: 0;
+        padding: 0;
+    }
 }

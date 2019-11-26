@@ -13,8 +13,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Banner/>
-        App goes here
+        <Banner title='SneakerBox'/>
         <Content/>
         <Footer/>
         <Nav/>

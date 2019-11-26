@@ -1,8 +1,11 @@
-$darkorange : darkorange;
+@import '../../styles/variables.scss';
 
 .Nav{
-    border: 1px solid $darkorange;
+    grid-column: 1 /span 1;
+    grid-row: 2 /span 1;
+    background-color: $roseLt;
     a{
         display: block;
+        text-decoration: none;
     }
 }

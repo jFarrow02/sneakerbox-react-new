@@ -34,7 +34,7 @@ const Content = ()=>{
                                 {resolveComponentName(conf.component, {path: conf.url.split('/products/')[1]})}
                             </Route>
                         )
-                    }//else
+                    }
                     else{
                         return <Route key={`route-${idx}`} path={conf.url}>{resolveComponentName(conf.url)}</Route>
                     }

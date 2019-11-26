@@ -1,9 +1,7 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
+  display: grid;
+  grid-template-columns: auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto;
+  grid-template-rows: 10vh, 80vh, 10vh;
 }
 
 .App-header {
