@@ -1,10 +1,13 @@
 @import '../../styles/variables.scss';
 
 @font-face{
-    font-family: 'Saria';
-    src: url($sairaStencil);
+    font-family: 'OpenSansReg';
+    src: url($openSansReg);
 }
 
 .Copyright{
-    font-family: 'Saria';
+    font-family: 'OpenSansReg';
+    p{
+        font-size: .75em;
+    }
 }

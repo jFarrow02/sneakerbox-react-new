@@ -1,5 +1,13 @@
 import axios from 'axios';
 
+let protocol = 'http',
+    serverHost = 'localhost',
+    port = '9000';
+
+const API_URL = `${protocol}://${serverHost}:${port}/api`;
+const APP_URL = `${protocol}://${serverHost}:${port}/app`;
+
+export const SERVER_URLS = {api: API_URL, app: APP_URL};
 /**
  * headers: {'Authorization': 'Bearer <token>'}
  */

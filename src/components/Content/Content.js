@@ -6,7 +6,7 @@ import {
     ProductThumbnails,
 } from '../index';
 import {Route} from 'react-router-dom';
-import {linkConfig} from '../../data/config';
+import {navConfig} from '../../data/config';
 
 const resolveComponentName = (name, props)=>{
     const map = {
@@ -23,7 +23,7 @@ const Content = ()=>{
         <main className='Content'>
             Content goes here
             {
-                linkConfig.map((conf, idx)=>{
+                navConfig.map((conf, idx)=>{
                     const productsTest = /\/products\//;
                     if(productsTest.test(conf.url)){
                         return(
@@ -31,7 +31,7 @@ const Content = ()=>{
                                 key={`route-${idx}`}
                                 path={conf.url}
                             >
-                                {resolveComponentName(conf.component, {path: conf.url.split('/products/')[1]})}
+                                {resolveComponentName(conf.component, {category: conf.url.split('/products/')[1]})}
                             </Route>
                         )
                     }

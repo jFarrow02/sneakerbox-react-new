@@ -1,14 +1,14 @@
 import React from 'react';
 import './Nav.scss';
 import {Link} from 'react-router-dom';
-import {linkConfig} from '../../data/config';
+import {navConfig} from '../../data/config';
 
 const Nav = ()=>{
 
     return(
         <nav className='Nav'>
             {
-                linkConfig.map((conf, idx)=>{
+                navConfig.map((conf, idx)=>{
                     return(
                         <Link key={`nav-${idx}`} to={conf.url}>{conf.text}</Link>
                     );

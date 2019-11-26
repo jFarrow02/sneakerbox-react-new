@@ -8,7 +8,6 @@ import MyAccount from './MyAccount';
 import Nav from './Nav';
 import ProductThumbnails from './ProductThumbnails';
 
-
 export {
     App,
     Banner,

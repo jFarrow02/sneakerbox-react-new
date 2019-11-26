@@ -1,5 +1,8 @@
 @import '../../styles/variables.scss';
-
+@font-face{
+    font-family: 'OpenSansBold';
+    src: url($openSansBold);
+}
 $paddingVert: 20px;
 $paddingHoriz: calc(#{$paddingVert} / 2);
 
@@ -10,6 +13,7 @@ $paddingHoriz: calc(#{$paddingVert} / 2);
     a{
         display: block;
         text-decoration: none;
+        font-family: 'OpenSansBold';
         background-color: $copper;
         color: $offWhite;
         padding-top: $paddingVert;

@@ -1,5 +1,7 @@
-import linkConfig from './route-config';
+import navConfig from './navConfig';
+import {productRoutes} from './routeConfig';
 
 export {
-    linkConfig,
+    navConfig,
+    productRoutes,
 };

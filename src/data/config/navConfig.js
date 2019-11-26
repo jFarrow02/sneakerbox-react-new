@@ -1,4 +1,4 @@
-const linkConfig = [
+const navConfig = [
     {component: 'Home', text: 'Home', url: '/home', },
     {component: 'ProductThumbnails', text: 'Men', url: '/products/men',},
     {component: 'ProductThumbnails', text: 'Women', url: '/products/women',},
@@ -7,4 +7,4 @@ const linkConfig = [
     {component: 'MyAccount', url: '/myaccount', text: 'My Account'},
 ];
     
-export default linkConfig;
+export default navConfig;
