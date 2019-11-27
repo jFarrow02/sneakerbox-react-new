@@ -10,3 +10,23 @@
         max-width: 100%;
     }
 }
+
+.Home--caption{
+    background-color: rgba(255, 249, 212, .8);
+    padding: 5px 10px 20px 10px;
+    border-radius: 25px;
+    h2{
+        font-family: 'Lobster';
+        color: $darkRed;
+        display: inline-block;
+        margin-block-start: 0;
+        margin-block-end: 0;
+    }
+    p{
+        margin-block-start: 5px;
+        margin-block-end: 0;
+    }
+    a{
+        color: $darkRed;
+    }
+}

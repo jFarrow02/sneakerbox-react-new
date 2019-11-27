@@ -1,5 +1,6 @@
 import App from './App';
 import Banner from './Banner';
+import CaptionedImage from './CaptionedImage';
 import Cart from './Cart';
 import Content from './Content';
 import Copyright from './Copyright';
@@ -13,6 +14,7 @@ import ProductThumbnails from './ProductThumbnails';
 export {
     App,
     Banner,
+    CaptionedImage,
     Cart,
     Content,
     Copyright,

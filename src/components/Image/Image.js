@@ -3,7 +3,7 @@ import './Image.scss';
 import propTypes from 'prop-types';
 
 
-const Image = (props)=>{
+const Image = props=>{
     const {src, alt, width, height, isLink, linkUrl, title} = props;
     const anchor = isLink ? <a href={linkUrl}></a> : null;
     return(
