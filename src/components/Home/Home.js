@@ -6,7 +6,7 @@ const Home = (props)=>{
 
     return(
         <section>
-            Home component goes here
+            <h2>{props.title}</h2>
         </section>
     );
 };
