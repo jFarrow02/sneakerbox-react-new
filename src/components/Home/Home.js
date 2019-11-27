@@ -1,13 +1,22 @@
 import React from 'react';
 import './Home.scss';
+import propTypes from 'prop-types';
 
-const Home = ()=>{
+const Home = (props)=>{
 
     return(
         <section>
-            Home Section here
+            Home component goes here
         </section>
     );
 };
 
 export default Home;
+
+Home.propTypes = {
+    title: propTypes.string,
+};
+
+Home.defaultProps = {
+    title: 'Home',
+};

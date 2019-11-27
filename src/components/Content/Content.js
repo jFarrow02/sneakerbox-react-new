@@ -21,26 +21,24 @@ const Content = ()=>{
 
     return(   
         <main className='Content'>
-            Content goes here
-            {
-                navConfig.map((conf, idx)=>{
-                    const productsTest = /\/products\//;
-                    if(productsTest.test(conf.url)){
-                        return(
-                            <Route
-                                key={`route-${idx}`}
-                                path={conf.url}
-                            >
-                                {resolveComponentName(conf.component, {category: conf.url.split('/products/')[1]})}
-                            </Route>
-                        )
-                    }
-                    else{
-                        return <Route key={`route-${idx}`} path={conf.url}>{resolveComponentName(conf.url)}</Route>
-                    }
-                })
-            }
-            
+                {
+                    navConfig.map((conf, idx)=>{
+                        const productsTest = /\/products\//;
+                        if(productsTest.test(conf.url)){
+                            return(
+                                <Route
+                                    key={`route-${idx}`}
+                                    path={conf.url}
+                                >
+                                    {resolveComponentName(conf.component, {category: conf.url.split('/products/')[1]})}
+                                </Route>
+                            )
+                        }
+                        else{
+                            return <Route key={`route-${idx}`} path={conf.url}>{resolveComponentName(conf.component)}</Route>
+                        }
+                    })
+                }
         </main>
     );
 }
