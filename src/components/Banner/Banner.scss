@@ -5,12 +5,16 @@
     font-family: 'Banner';
     src: url($sairaStencil);
 }
+
 .Banner{
     @include headerFooter;
+    display: grid;
     h1{
         font-family: 'Banner';
         font-size: 4.5em;
         margin: -25px 0;
         padding: 0;
+        grid-column: 1 /span 1;
+        grid-row: 1 /span 1;
     }
 }

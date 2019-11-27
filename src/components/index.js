@@ -1,5 +1,6 @@
 import App from './App';
 import Banner from './Banner';
+import Cart from './Cart';
 import Content from './Content';
 import Copyright from './Copyright';
 import Footer from './Footer';
@@ -11,6 +12,7 @@ import ProductThumbnails from './ProductThumbnails';
 export {
     App,
     Banner,
+    Cart,
     Content,
     Copyright,
     Footer,

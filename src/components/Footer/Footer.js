@@ -5,9 +5,9 @@ import {Copyright} from '../index';
 const Footer = ()=>{
 
     return(
-        <div className='Footer'>
+        <footer className='Footer'>
             <Copyright/>
-        </div>
+        </footer>
     )
 }
 

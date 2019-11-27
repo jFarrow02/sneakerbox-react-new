@@ -1,12 +1,13 @@
 import React from 'react';
 import './Home.scss';
 import propTypes from 'prop-types';
+import mainImg from '../../images/sneakers-railtracks.jpg';
 
 const Home = (props)=>{
 
     return(
-        <section>
-            <h2>{props.title}</h2>
+        <section className='Home'>
+            <img src={mainImg} alt='Main image'></img>
         </section>
     );
 };

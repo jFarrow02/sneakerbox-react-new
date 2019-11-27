@@ -1,7 +1,6 @@
 .App {
   display: grid;
-  grid-template-columns: auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto;
-  grid-template-rows: 10vh, 80vh, 10vh;
+  grid-template-columns: 175px 1fr;
 }
 
 .App-header {

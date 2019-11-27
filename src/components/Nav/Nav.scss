@@ -8,7 +8,7 @@ $paddingHoriz: calc(#{$paddingVert} / 2);
 
 
 .Nav{
-    grid-column: 1 /span 1;
+    grid-column: 1 /span 3;
     grid-row: 2 /span 1;
     a{
         display: block;

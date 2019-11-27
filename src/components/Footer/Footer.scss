@@ -4,4 +4,6 @@
 .Footer{
     @include headerFooter;
     background-color: $darkRed;
+    display: grid;
+    grid-template-columns: auto auto auto;
 }

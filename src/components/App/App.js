@@ -14,9 +14,9 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Banner title='SneakerBox'/>
+        <Nav/>
         <Content/>
         <Footer/>
-        <Nav/>
       </div>
     </BrowserRouter>
     

@@ -1,12 +1,16 @@
 import React from 'react';
 import './Banner.scss';
+import {
+    Cart,
+} from '../index';
 
 const Banner = (props)=>{
 
     return(
-        <div className='Banner'>
+        <header className='Banner'>
             <h1>{props.title}</h1>
-        </div>
+                <Cart/>
+        </header>
     )
 }
 
