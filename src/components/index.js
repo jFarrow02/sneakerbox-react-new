@@ -5,6 +5,7 @@ import Content from './Content';
 import Copyright from './Copyright';
 import Footer from './Footer';
 import Home from './Home';
+import Image from './Image';
 import MyAccount from './MyAccount';
 import Nav from './Nav';
 import ProductThumbnails from './ProductThumbnails';
@@ -17,6 +18,7 @@ export {
     Copyright,
     Footer,
     Home,
+    Image,
     MyAccount,
     Nav,
     ProductThumbnails,
