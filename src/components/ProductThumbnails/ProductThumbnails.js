@@ -35,7 +35,7 @@ const ProductThumbnails = (props)=>{
                 <ul>
                     {
                         products.map((product, idx)=>{
-                            return <li key={`item-${idx}`}>{product.name}</li>
+                            return <li key={`item-${idx}`}>{product.modelName}</li>
                         })
                     }
                 </ul>
