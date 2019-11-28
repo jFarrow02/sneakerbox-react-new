@@ -3,7 +3,7 @@ import './Cart.scss';
 
 const Cart = (props)=>{
 
-    const [itemCount, setItemCount] = useState(0);
+    const [itemCount] = useState(0);
     return(
         <div className='Cart'>
             Cart goes here

@@ -8,7 +8,11 @@ import propTypes from 'prop-types';
 import mainImg from '../../images/sneakers-railtracks.jpg';
 
 const Home = (props)=>{
-    const label='Shop Winter Collection';
+    /**
+     * TODO: 2019-11-28 12:24 EST 
+     * LOOK TO REFACTOR caption CONTENT INTO SEPARATE CONFIG FILE
+     * AND IMPORT DYNAMICALLY
+     */
     const caption = <div className='Home--caption'>
             <h2>Winter Mode</h2>
             <p>Get ready for rugged adventures with our new <strong>Winter Collection.</strong></p>

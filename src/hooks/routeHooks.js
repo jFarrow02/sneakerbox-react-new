@@ -16,7 +16,7 @@ export const useFetchedData = conf=>{
                 console.log(err);
             })
 
-    }, [loading] /*activate effect ONLY if 'loading' changes*/);
+    }, [loading, conf] /*activate effect ONLY if 'loading' changes*/);
 
     return [loading, data]
 };
