@@ -1,16 +1,17 @@
 import React from 'react';
 import './Image.scss';
 import PropTypes from 'prop-types';
-
+// import img from '../../images/tn_images/sneakers-005-tn.png';
 
 const Image = props=>{
-    const {alt, height, isLink, linkUrl, src, title, width,} = props;
+    const {alt, baseUrl, height, isLink, linkUrl, src, imgSrc, title, width,} = props;
     const anchor = isLink ? <a href={linkUrl}></a> : null;
     return(
         <img
             alt={alt}
             height={height}
-            src={src}
+            //src={img}
+            src={require(`../../images/tn_images/${imgSrc}`)}
             title={title}
             width={width}
         >

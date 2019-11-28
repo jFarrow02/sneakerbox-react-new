@@ -28,7 +28,8 @@ const Home = (props)=>{
 
     return(
         <section className='Home'>
-            <CaptionedImage
+            Home here
+            {/* <CaptionedImage
                 caption={caption}
                 captionStyles={captionStyles}
             >
@@ -36,8 +37,7 @@ const Home = (props)=>{
                     alt='Main image home page; man walking along railway'
                     src={mainImg}
                 />
-            </CaptionedImage>
-            
+            </CaptionedImage> */}
         </section>
     );
 };
