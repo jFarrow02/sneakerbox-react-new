@@ -9,6 +9,7 @@ import Footer from './Footer';
 import Home from './Home';
 import Image from './Image';
 import Link from './Link';
+import LoadingSpinner from './LoadingSpinner';
 import MyAccount from './MyAccount';
 import Nav from './Nav';
 import PinterestIcon from './PinterestIcon';
@@ -28,6 +29,7 @@ export {
     Home,
     Image,
     Link,
+    LoadingSpinner,
     MyAccount,
     Nav,
     PinterestIcon,

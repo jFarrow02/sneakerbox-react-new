@@ -1,5 +1,8 @@
 import React from 'react';
 import './ProductThumbnails.scss';
+import {
+    LoadingSpinner,
+} from '../index';
 import propTypes from 'prop-types';
 import {productRoutes} from '../../data/config';
 import {useFetchedData} from '../../hooks/routeHooks';
@@ -16,7 +19,12 @@ const ProductThumbnails = (props)=>{
     //Build page content
     let content;
     if(loading){
-        content = <div className='loading'>Loading content...</div>;
+        content = <div className='loading'>
+            <h3><em>Loading...</em></h3>
+            <div>
+                <LoadingSpinner fill='#90323d'/>
+            </div>
+        </div>;
     }
     else{
         if(products.length < 1){
