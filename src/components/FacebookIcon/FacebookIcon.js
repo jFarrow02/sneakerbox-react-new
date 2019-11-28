@@ -1,12 +1,11 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './FacebookIcon.scss';
-//import {useToggleFill} from '../../hooks/uiHooks';
+import {useFill} from '../../hooks/uiHooks';
 
 const FacebookIcon = props=>{
-    //const [fill, setFill] = useToggleFill('#fff9d4', '#a72002');
-    const [fill, setFill] = useState('#fff9d4');
+    const [fill, setFill] = useFill('#fff9d4');
     const toggleFill = (newFill)=>{
-        return fill !== newFill ? setFill(newFill) : setFill('#fff9d4');
+        setFill(newFill);
     }
     return(
         <svg

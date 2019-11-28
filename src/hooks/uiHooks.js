@@ -1,11 +1,10 @@
 import {useEffect, useState} from 'react';
 
-export const useToggleFill = (newFill)=>{
-    let [fill, setFill] = useState(initialFill);
+export const useFill = (newFill)=>{
+    let [fill, setFill] = useState(newFill);
     useEffect(()=>{
-        //console.log(fill === initialFill);
         if(fill !== newFill){setFill(newFill)}
     },[]);
 
-    return [fill];
+    return [fill, setFill];
 }
