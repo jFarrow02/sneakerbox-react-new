@@ -5,6 +5,7 @@ import {useFill} from '../../hooks/uiHooks';
 const FacebookIcon = props=>{
     const [fill, setFill] = useFill('#fff9d4');
     const toggleFill = (newFill)=>{
+        if(!props.fillTogglable){return}
         setFill(newFill);
     }
     return(
@@ -13,8 +14,8 @@ const FacebookIcon = props=>{
             className='facebook-logo'
             focusable='false'
             height={props.height}
-            onMouseEnter={()=>{toggleFill('#a72002')}}
-            onMouseLeave={()=>{toggleFill('#fff9d4')}}
+            onMouseEnter={()=>{toggleFill(props.newFill)}}
+            onMouseLeave={()=>{toggleFill(props.initialFill)}}
             viewBox="0 0 512 512" 
             width={props.width}
             xmlns="http://www.w3.org/2000/svg"

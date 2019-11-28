@@ -10,7 +10,6 @@ import {
 } from '../index';
 
 const Footer = ()=>{
-    const iconFill = '#d9cab3';
     let iconWidth, iconHeight = '50px'
     return(
         <footer className='Footer'>
@@ -20,28 +19,28 @@ const Footer = ()=>{
                     url='#'
                     newWindow={false}
                 >
-                    <TwitterIcon fill={iconFill} height={iconHeight} width={iconWidth}/>
+                    <TwitterIcon fillTogglable={true} height={iconHeight} initialFill='#fff9d4' newFill='#fd3a0f' width={iconWidth}/>
                 </Link>
                 <Link
                     linkDescription='Sneakerbox on Facebook'
                     url='#'
                     newWindow={false}
                 >
-                    <FacebookIcon fill={iconFill} height={iconHeight} width={iconWidth}/>
+                    <FacebookIcon fillTogglable={true} height={iconHeight} initialFill='#fff9d4' newFill='#fd3a0f' width={iconWidth}/>
                 </Link>
                 <Link
                     linkDescription='Sneakerbox on Snapchat'
                     url='#'
                     newWindow={false}
                 >
-                    <SnapchatIcon fill={iconFill} height={iconHeight} width={iconWidth}/>
+                    <SnapchatIcon fillTogglable={true} height={iconHeight} initialFill='#fff9d4' newFill='#fd3a0f' width={iconWidth}/>
                 </Link>
                 <Link
                     linkDescription='Sneakerbox on Pinterest'
                     url='#'
                     newWindow={false}
                 >
-                    <PinterestIcon fill={iconFill} height={iconHeight} width={iconWidth}/>
+                    <PinterestIcon fillTogglable={true} height={iconHeight} initialFill='#fff9d4' newFill='#fd3a0f' width={iconWidth}/>
                 </Link>
             </div>
             
