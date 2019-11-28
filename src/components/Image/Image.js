@@ -1,7 +1,6 @@
 import React from 'react';
 import './Image.scss';
 import PropTypes from 'prop-types';
-// import img from '../../images/tn_images/sneakers-005-tn.png';
 
 const Image = props=>{
     const {alt, height, isLink, linkUrl, src, title, width, isThumbnail, isTinyImg, dynamicImgSrc} = props;
@@ -12,6 +11,13 @@ const Image = props=>{
             <img
                 alt={alt}
                 height={height}
+                /**
+                 * TODO: 2019-11-28 18:26 EST
+                 * HOW CAN THE BASE FILE PATH BE PASSED AS A PROP
+                 * AND USED IN require()? 
+                 * 
+                 * RETURNING DIFFERENT JSX CONDITIONALLY IS A WORKAROUND BASED ON https://stackoverflow.com/questions/45334874/load-images-based-on-dynamic-path-in-reactjs/45334965#45334965
+                 */
                 src={require(`../../images/tn_images/${dynamicImgSrc}`)}
                 title={title}
                 width={width}
