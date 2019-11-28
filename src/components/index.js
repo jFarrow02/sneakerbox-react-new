@@ -14,7 +14,7 @@ import MyAccount from './MyAccount';
 import Nav from './Nav';
 import PinterestIcon from './PinterestIcon';
 import Thumbnail from './Thumbnail';
-import ThumbnailContainer from './ThumbnailContainer';
+import ThumbnailGroup from './ThumbnailGroup';
 import TwitterIcon from './TwitterIcon';
 import SnapchatIcon from './SnapchatIcon';
 
@@ -35,7 +35,7 @@ export {
     Nav,
     PinterestIcon,
     Thumbnail,
-    ThumbnailContainer,
+    ThumbnailGroup,
     SnapchatIcon,
     TwitterIcon,
 };

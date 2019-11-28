@@ -1,5 +1,5 @@
 import React from 'react';
-import './ThumbnailContainer.scss';
+import './ThumbnailGroup.scss';
 import {
     LoadingSpinner,
     Thumbnail,
@@ -9,7 +9,7 @@ import {productRoutes} from '../../data/config';
 import {useFetchedData} from '../../hooks/routeHooks';
 import {SERVER_URLS} from '../../services/httpService';
 
-const ThumbnailContainer = (props)=>{
+const ThumbnailGroup = (props)=>{
     const categoryParam = props.category !== 'sale' ? `/category-${props.category}` : '';
     let {byCategory} = productRoutes,
         url = `${SERVER_URLS.api}${byCategory}${categoryParam}`;
@@ -41,21 +41,21 @@ const ThumbnailContainer = (props)=>{
     }
     
     return(
-        <section className='ThumbnailContainer'>
+        <section className='ThumbnailGroup'>
             <h2>{props.category}</h2>
-            <div className='ThumbnailContainer--content'>
+            <div className='ThumbnailGroup--content'>
                 {content}
             </div>
         </section>
     )
 };
 
-export default ThumbnailContainer;
+export default ThumbnailGroup;
 
-ThumbnailContainer.propTypes = {
+ThumbnailGroup.propTypes = {
     category: propTypes.string,
 };
 
-ThumbnailContainer.defaultProps = {
+ThumbnailGroup.defaultProps = {
     category: '',
 }

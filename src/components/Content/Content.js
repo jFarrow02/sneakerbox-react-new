@@ -1,21 +1,8 @@
 import React from 'react';
 import './Content.scss';
-import {
-    Home,
-    MyAccount,
-    ThumbnailContainer,
-} from '../index';
+import {resolveComponentName} from '../../services/resolveComponentService';
 import {Redirect, Route} from 'react-router-dom';
 import {navConfig} from '../../data/config';
-
-const resolveComponentName = (name, props)=>{
-    const map = {
-        ProductThumbnails: props ? <ThumbnailContainer {...props}/> : <ThumbnailContainer/>,
-        Home: props ? <Home {...props}/> : <Home/>,
-        MyAccount: props ? <MyAccount {...props}/> : <MyAccount/>,
-    };
-    return map[name];
-}
 
 const Content = ()=>{
 
