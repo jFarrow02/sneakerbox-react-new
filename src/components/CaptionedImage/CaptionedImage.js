@@ -21,7 +21,7 @@ const CaptionedImage = props=>{
 export default CaptionedImage;
 
 CaptionedImage.propTypes = {
-    caption: propTypes.oneOf(
+    caption: propTypes.oneOfType(
         [
             propTypes.element,
             propTypes.string,

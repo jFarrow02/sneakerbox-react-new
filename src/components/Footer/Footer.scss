@@ -5,5 +5,18 @@
     @include headerFooter;
     background-color: $darkRed;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px auto;
+    .Copyright{
+        grid-column: 2 /span 1;
+        grid-row: 2 /span 1;
+        text-align: center;
+    }
+}
+
+.Footer--icon-row{
+    display: flex;
+    justify-content: space-between;
+    grid-column: 2 /span 1;
+    grid-row: 1 /span 1;
 }

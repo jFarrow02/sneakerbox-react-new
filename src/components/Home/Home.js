@@ -8,10 +8,13 @@ import propTypes from 'prop-types';
 import mainImg from '../../images/sneakers-railtracks.jpg';
 
 const Home = (props)=>{
+    const label='Shop Winter Collection';
     const caption = <div className='Home--caption'>
             <h2>Winter Mode</h2>
             <p>Get ready for rugged adventures with our new <strong>Winter Collection.</strong></p>
-            <a href='#'>&gt;&gt;Shop Now.</a>
+            <a
+                href='#'
+            >&gt;&gt;Shop Now.</a>
     </div>;
     const captionStyles={
         position: 'absolute',

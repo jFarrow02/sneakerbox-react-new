@@ -1,10 +1,10 @@
 import React from 'react';
 import './Image.scss';
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 
 const Image = props=>{
-    const {src, alt, width, height, isLink, linkUrl, title} = props;
+    const {alt, height, isLink, linkUrl, src, title, width,} = props;
     const anchor = isLink ? <a href={linkUrl}></a> : null;
     return(
         <img
@@ -22,13 +22,13 @@ const Image = props=>{
 export default Image;
 
 Image.propTypes = {
-    alt: propTypes.string,
-    height: propTypes.oneOf([propTypes.string, propTypes.number]),
-    isLink: propTypes.bool,
-    linkUrl: propTypes.string,
-    src: propTypes.string,
-    title: propTypes.oneOf([propTypes.string, propTypes.number]),
-    width: propTypes.oneOf([propTypes.string, propTypes.number]),
+    alt: PropTypes.string,
+    height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    isLink: PropTypes.bool,
+    linkUrl: PropTypes.string,
+    src: PropTypes.string,
+    title: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };
 
 Image.defaultProps = {
