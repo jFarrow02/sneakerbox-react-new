@@ -11,7 +11,7 @@ const resolveComponentName = (name, props)=>{
         Home: props ? <Home {...props}/> : <Home/>,
         MyAccount: props ? <MyAccount {...props}/> : <MyAccount/>,
         Product: props ? <Product {...props}/> : <Product/>,
-        ProductThumbnails: props ? <ThumbnailGroup {...props}/> : <ThumbnailGroup/>,
+        ThumbnailGroup: props ? <ThumbnailGroup {...props}/> : <ThumbnailGroup/>,
     };
     return map[name];
 }

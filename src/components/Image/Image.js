@@ -4,14 +4,41 @@ import PropTypes from 'prop-types';
 // import img from '../../images/tn_images/sneakers-005-tn.png';
 
 const Image = props=>{
-    const {alt, baseUrl, height, isLink, linkUrl, src, imgSrc, title, width,} = props;
+    const {alt, height, isLink, linkUrl, src, title, width, isThumbnail, isTinyImg, dynamicImgSrc} = props;
     const anchor = isLink ? <a href={linkUrl}></a> : null;
+   
+    if(isThumbnail){
+        return(
+            <img
+                alt={alt}
+                height={height}
+                src={require(`../../images/tn_images/${dynamicImgSrc}`)}
+                title={title}
+                width={width}
+            >
+                {anchor}
+            </img>
+        )
+    }
+    
+    else if(isTinyImg){
+        return(
+            <img
+                alt={alt}
+                height={height}
+                src={require(`../../images/tiny_images/${dynamicImgSrc}`)}
+                title={title}
+                width={width}
+            >
+                {anchor}
+            </img>
+        )
+    }
     return(
         <img
             alt={alt}
             height={height}
-            //src={img}
-            src={require(`../../images/tn_images/${imgSrc}`)}
+            src={src}
             title={title}
             width={width}
         >
@@ -24,6 +51,7 @@ export default Image;
 
 Image.propTypes = {
     alt: PropTypes.string,
+    dynamicImgSrc: PropTypes.string,
     height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     isLink: PropTypes.bool,
     linkUrl: PropTypes.string,
@@ -34,6 +62,7 @@ Image.propTypes = {
 
 Image.defaultProps = {
     alt: '',
+    dynamicImgSrc: null,
     height: '',
     isLink: false,
     linkUrl: '',
