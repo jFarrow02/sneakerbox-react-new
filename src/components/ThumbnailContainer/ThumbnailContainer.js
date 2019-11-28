@@ -1,20 +1,21 @@
 import React from 'react';
-import './ProductThumbnails.scss';
+import './ThumbnailContainer.scss';
 import {
     LoadingSpinner,
+    Thumbnail,
 } from '../index';
 import propTypes from 'prop-types';
 import {productRoutes} from '../../data/config';
 import {useFetchedData} from '../../hooks/routeHooks';
 import {SERVER_URLS} from '../../services/httpService';
 
-const ProductThumbnails = (props)=>{
+const ThumbnailContainer = (props)=>{
     const categoryParam = props.category !== 'sale' ? `/category-${props.category}` : '';
     let {byCategory} = productRoutes,
         url = `${SERVER_URLS.api}${byCategory}${categoryParam}`;
     const conf = {method: 'GET', url: url,};
     const [loading, data] = useFetchedData(conf);
-    const {data: products} = data;
+    const {data: items} = data;
     
     //Build page content
     let content;
@@ -27,36 +28,34 @@ const ProductThumbnails = (props)=>{
         </div>;
     }
     else{
-        if(products.length < 1){
+        if(items.length < 1){
             content = <div>No results found.</div>
         }
         else{
-            content = (
-                <ul>
-                    {
-                        products.map((product, idx)=>{
-                            return <li key={`item-${idx}`}>{product.modelName}</li>
-                        })
-                    }
-                </ul>
-            )
+            content = items.map((item, idx)=>{
+                return(
+                    <Thumbnail key={idx} model={item}/>
+                )
+            })
         }
     }
     
     return(
-        <section className='ProductThumbnails'>
+        <section className='ThumbnailContainer'>
             <h2>{props.category}</h2>
-            {content}
+            <div className='ThumbnailContainer--content'>
+                {content}
+            </div>
         </section>
     )
 };
 
-export default ProductThumbnails;
+export default ThumbnailContainer;
 
-ProductThumbnails.propTypes = {
+ThumbnailContainer.propTypes = {
     category: propTypes.string,
 };
 
-ProductThumbnails.defaultProps = {
+ThumbnailContainer.defaultProps = {
     category: '',
 }

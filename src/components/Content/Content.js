@@ -3,14 +3,14 @@ import './Content.scss';
 import {
     Home,
     MyAccount,
-    ProductThumbnails,
+    ThumbnailContainer,
 } from '../index';
 import {Redirect, Route} from 'react-router-dom';
 import {navConfig} from '../../data/config';
 
 const resolveComponentName = (name, props)=>{
     const map = {
-        ProductThumbnails: props ? <ProductThumbnails {...props}/> : <ProductThumbnails/>,
+        ProductThumbnails: props ? <ThumbnailContainer {...props}/> : <ThumbnailContainer/>,
         Home: props ? <Home {...props}/> : <Home/>,
         MyAccount: props ? <MyAccount {...props}/> : <MyAccount/>,
     };

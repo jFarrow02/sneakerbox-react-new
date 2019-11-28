@@ -13,7 +13,8 @@ import LoadingSpinner from './LoadingSpinner';
 import MyAccount from './MyAccount';
 import Nav from './Nav';
 import PinterestIcon from './PinterestIcon';
-import ProductThumbnails from './ProductThumbnails';
+import Thumbnail from './Thumbnail';
+import ThumbnailContainer from './ThumbnailContainer';
 import TwitterIcon from './TwitterIcon';
 import SnapchatIcon from './SnapchatIcon';
 
@@ -33,7 +34,8 @@ export {
     MyAccount,
     Nav,
     PinterestIcon,
-    ProductThumbnails,
+    Thumbnail,
+    ThumbnailContainer,
     SnapchatIcon,
     TwitterIcon,
 };
