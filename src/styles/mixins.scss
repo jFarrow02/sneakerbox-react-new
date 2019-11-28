@@ -4,3 +4,8 @@
     grid-column: 1 /span 12;
     padding: 10px 0 10px 20px;
 }
+
+@mixin mainContent{
+    grid-column: 2 /span 1;
+    grid-row: 2 /span 1;
+}

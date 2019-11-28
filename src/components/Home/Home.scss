@@ -1,11 +1,13 @@
 @import '../../styles/variables.scss';
 @import '../../fonts/Lobster/Lobster-Regular.ttf';
+@import '../../styles/mixins.scss';
 
 @font-face{
     font-family: 'Lobster';
     src: url($lobster);
 }
 .Home{
+    @include mainContent;
     img{
         max-width: 100%;
     }
