@@ -1,5 +1,6 @@
 # Sneakerbox
-_For athletic shoe enthusiasts everywhere_
+![Our Logo](https://github.com/jFarrow02/sneakerbox-react-new/blob/master/public/android-chrome-192x192.png) 
+_For athletic shoe enthusiasts everywhere._
 
 ## Available Scripts
 
