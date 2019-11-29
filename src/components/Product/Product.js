@@ -3,6 +3,7 @@ import './Product.scss';
 import {
     Image,
 } from '../../components';
+import propTypes from 'prop-types';
 
 const Product = props=>{
     const {
@@ -39,6 +40,23 @@ const Product = props=>{
 }
 
 export default Product;
+
+Product.propTypes = {
+    desc: propTypes.string,
+    imageFiles: propTypes.object,
+    isThumbnail: propTypes.bool,
+    modelName: propTypes.string,
+
+};
+
+Product.defaultProps = {
+    desc: '',
+    imageFiles: {
+        thumbnail: '',
+    },
+    isThumbnail: false,
+    modelName: '',
+}
 
 /***SCHEMA***/
     // _id: ObjectId,

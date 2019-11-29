@@ -1,6 +1,7 @@
 import React from 'react';
 import './Thumbnail.scss';
 import {resolveComponentName} from '../../services/resolveComponentService';
+import propTypes from 'prop-types';
 
 /**
  * The Thumbnail component accepts a single prop, 'model', which should be an Object representing 
@@ -20,3 +21,11 @@ const Thumbnail = props=>{
 }
 
 export default Thumbnail;
+
+Thumbnail.propTypes = {
+    model: propTypes.object,
+}
+
+Thumbnail.defaultProps = {
+    model: {},
+}

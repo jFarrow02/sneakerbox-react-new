@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match a snapshot 1`] = `
+<a
+  aria-label=""
+  href="#"
+  onClick={null}
+  target="_self"
+/>
+`;

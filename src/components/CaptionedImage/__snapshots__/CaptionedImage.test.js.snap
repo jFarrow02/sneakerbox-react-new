@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match a snapshot 1`] = `
+<div
+  className="CaptionedImage"
+>
+  <div
+    className="CaptionedImage--caption"
+    style={Object {}}
+  >
+    
+  </div>
+</div>
+`;

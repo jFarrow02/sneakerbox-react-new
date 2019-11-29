@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match a snapshot 1`] = `
+<section
+  className="MyAccount"
+>
+  My Account here
+</section>
+`;

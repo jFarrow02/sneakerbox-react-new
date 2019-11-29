@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match a snapshot 1`] = `
+<main
+  className="Content"
+>
+  <section
+    className="Home"
+  >
+    <div
+      className="CaptionedImage"
+    >
+      <div
+        className="CaptionedImage--caption"
+        style={
+          Object {
+            "left": "15px",
+            "position": "absolute",
+            "top": "15px",
+          }
+        }
+      >
+        <div
+          className="Home--caption"
+        >
+          <h2>
+            Winter Mode
+          </h2>
+          <p>
+            Get ready for rugged adventures with our new 
+            <strong>
+              Winter Collection.
+            </strong>
+          </p>
+          <a
+            href="#"
+          >
+            &gt;&gt;Shop Now.
+          </a>
+        </div>
+      </div>
+      <img
+        alt="Main image home page; man walking along railway"
+        height=""
+        src="sneakers-railtracks.jpg"
+        title=""
+        width=""
+      />
+    </div>
+  </section>
+</main>
+`;
