@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './Cart.scss';
 
-const Cart = (props)=>{
+const Cart = ()=>{
 
     const [itemCount] = useState(0);
     return(

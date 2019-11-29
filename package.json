@@ -65,7 +65,8 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "jest --colors --coverage",
-    "test:short": "jest --colors --onlyChanged --watch"
+    "test:short": "jest --colors --onlyChanged --watch",
+    "test:u": "jest --colors --coverage -u"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -94,7 +95,6 @@
       "<rootDir>/src/serviceWorker.js",
       "index.js"
     ],
-
     "setupFiles": [
       "react-app-polyfill/jsdom"
     ],
@@ -141,6 +141,8 @@
     ]
   },
   "devDependencies": {
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
     "node-sass": "^4.13.0",
     "prop-types": "^15.7.2",
     "react-test-renderer": "^16.12.0"

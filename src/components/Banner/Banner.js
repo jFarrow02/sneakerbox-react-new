@@ -4,7 +4,7 @@ import {
     Cart,
 } from '../index';
 
-const Banner = (props)=>{
+const Banner = props=>{
 
     return(
         <header className='Banner'>
