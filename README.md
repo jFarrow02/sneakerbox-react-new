@@ -1,4 +1,4 @@
-# Sneakerbox ![Our Logo](https://github.com/jFarrow02/sneakerbox-react-new/blob/master/public/logo-25pc.png) 
+# Sneakerbox ![Our Logo](https://github.com/jFarrow02/sneakerbox-react-new/blob/dev/public/logo-25pc.png) 
 _For athletic shoe enthusiasts everywhere._
 
 ## Available Scripts
