@@ -3,19 +3,18 @@ import './FacebookIcon.scss';
 import {useFill} from '../../hooks/uiHooks';
 
 const FacebookIcon = props=>{
-    const [fill, setFill] = useFill('#fff9d4');
-    const toggleFill = (newFill)=>{
-        if(!props.fillTogglable){return}
-        setFill(newFill);
-    }
+    
+    //Re-use 'stateful logic' from custom hook:
+    const [fill, setFill] = useFill(props.initialFill);
+
     return(
         <svg
             alt="facebook"
             className='facebook-logo'
             focusable='false'
             height={props.height}
-            onMouseEnter={()=>{toggleFill(props.newFill)}}
-            onMouseLeave={()=>{toggleFill(props.initialFill)}}
+            onMouseEnter={()=>{setFill(props.newFill)}}
+            onMouseLeave={()=>{setFill(props.initialFill)}}
             viewBox="0 0 512 512" 
             width={props.width}
             xmlns="http://www.w3.org/2000/svg"
