@@ -27,10 +27,16 @@ const Home = props=>{
         top: '15px',
         left: '15px',
     };
-
+    const rightCaptionStyles = {
+        position: 'absolute',
+        bottom: '15px',
+        right: '15px',
+    }
    
     return(
         <section className='Home'>
+            {/* TODO: 2019-11-29 LOOK TO REFACTOR CAPTIONEDIMAGE TO A
+            CONTAINER COMPONENT (WITH TEXT NODES, TOP/BOTTOM MARGINS) */}
             <CaptionedImage
                 caption={caption}
                 captionStyles={captionStyles}
@@ -39,15 +45,26 @@ const Home = props=>{
                     alt='Main image home page; man walking along railway'
                     src={mainImg}
                 />
-                 <Image
+            </CaptionedImage>
+            <CaptionedImage
+                caption={caption}
+                captionStyles={rightCaptionStyles}
+            >
+                <Image
                     alt='Main image home page; sneakers on a skyscraper'
                     src={airImg}
                 />
+            </CaptionedImage>
+            <CaptionedImage
+                caption={caption}
+                captionStyles={{position: 'absolute', bottom: '15px', left: '15px'}}
+            >
                 <Image
                     alt='Main image home page; sneakers on a skyscraper'
                     src={skyscraperImg}
                 />
             </CaptionedImage>
+            
         </section>
     );
 };
