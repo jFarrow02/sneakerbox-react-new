@@ -7,6 +7,7 @@ import {
 } from '../components';
 
 const resolveComponentName = (name, props)=>{
+    //console.log(name);
     const map = {
         Home: props ? <Home {...props}/> : <Home/>,
         MyAccount: props ? <MyAccount {...props}/> : <MyAccount/>,

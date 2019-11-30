@@ -6,8 +6,10 @@ import {
 } from '../index';
 import propTypes from 'prop-types';
 import mainImg from '../../images/sneakers-railtracks.jpg';
+import skyscraperImg from '../../images/sneakers-skyscraper.jpg';
+import airImg from '../../images/sneakers-jordan.jpg';
 
-const Home = (props)=>{
+const Home = props=>{
     /**
      * TODO: 2019-11-28 12:24 EST 
      * LOOK TO REFACTOR caption CONTENT INTO SEPARATE CONFIG FILE
@@ -26,6 +28,7 @@ const Home = (props)=>{
         left: '15px',
     };
 
+   
     return(
         <section className='Home'>
             <CaptionedImage
@@ -35,6 +38,14 @@ const Home = (props)=>{
                 <Image
                     alt='Main image home page; man walking along railway'
                     src={mainImg}
+                />
+                 <Image
+                    alt='Main image home page; sneakers on a skyscraper'
+                    src={airImg}
+                />
+                <Image
+                    alt='Main image home page; sneakers on a skyscraper'
+                    src={skyscraperImg}
                 />
             </CaptionedImage>
         </section>
