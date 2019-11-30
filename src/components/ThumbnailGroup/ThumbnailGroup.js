@@ -1,6 +1,7 @@
 import React from 'react';
 import './ThumbnailGroup.scss';
 import {
+    Heading,
     LoadingSpinner,
     Thumbnail,
 } from '../index';
@@ -40,9 +41,11 @@ const ThumbnailGroup = (props)=>{
         }
     }
     
+    const initial = props.category.substring(0, 1);
+    const categoryName = props.category.replace(initial, initial.toUpperCase())
     return(
         <section className='ThumbnailGroup'>
-            <h2>{props.category}</h2>
+            <Heading headingLevel='2' text={categoryName}/>
             <div className='ThumbnailGroup--content'>
                 {content}
             </div>

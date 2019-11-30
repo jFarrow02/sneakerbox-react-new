@@ -1,5 +1,8 @@
 import React from 'react';
 import './Thumbnail.scss';
+import {
+    Heading,
+} from '../../components';
 import {resolveComponentName} from '../../services/resolveComponentService';
 import propTypes from 'prop-types';
 
@@ -13,6 +16,7 @@ import propTypes from 'prop-types';
 const Thumbnail = props=>{
     const {key} = props.model;
     const model = resolveComponentName(key, {...props.model, isThumbnail: true});
+   
     return(
         <div className='Thumbnail'>
             {model}
