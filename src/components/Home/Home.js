@@ -5,9 +5,9 @@ import {
     Image,
 } from '../index';
 import propTypes from 'prop-types';
-import mainImg from '../../images/sneakers-railtracks.jpg';
-import skyscraperImg from '../../images/sneakers-skyscraper.jpg';
-import airImg from '../../images/sneakers-jordan.jpg';
+import mainImg from '../../images/content_photos/sneakers-railtracks.jpg';
+import skyscraperImg from '../../images/content_photos/sneakers-skyscraper.jpg';
+import airImg from '../../images/content_photos/sneakers-jordan.jpg';
 
 const Home = props=>{
     /**
