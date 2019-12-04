@@ -5,9 +5,11 @@ import {
     Image,
 } from '../index';
 import propTypes from 'prop-types';
-import mainImg from '../../images/sneakers-railtracks.jpg';
+import mainImg from '../../images/content_photos/sneakers-railtracks.jpg';
+import skyscraperImg from '../../images/content_photos/sneakers-skyscraper.jpg';
+import airImg from '../../images/content_photos/sneakers-jordan.jpg';
 
-const Home = (props)=>{
+const Home = props=>{
     /**
      * TODO: 2019-11-28 12:24 EST 
      * LOOK TO REFACTOR caption CONTENT INTO SEPARATE CONFIG FILE
@@ -25,9 +27,16 @@ const Home = (props)=>{
         top: '15px',
         left: '15px',
     };
-
+    const rightCaptionStyles = {
+        position: 'absolute',
+        bottom: '15px',
+        right: '15px',
+    }
+   
     return(
         <section className='Home'>
+            {/* TODO: 2019-11-29 LOOK TO REFACTOR CAPTIONEDIMAGE TO A
+            CONTAINER COMPONENT (WITH TEXT NODES, TOP/BOTTOM MARGINS) */}
             <CaptionedImage
                 caption={caption}
                 captionStyles={captionStyles}
@@ -37,6 +46,25 @@ const Home = (props)=>{
                     src={mainImg}
                 />
             </CaptionedImage>
+            <CaptionedImage
+                caption={caption}
+                captionStyles={rightCaptionStyles}
+            >
+                <Image
+                    alt='Main image home page; sneakers on a skyscraper'
+                    src={airImg}
+                />
+            </CaptionedImage>
+            <CaptionedImage
+                caption={caption}
+                captionStyles={{position: 'absolute', bottom: '15px', left: '15px'}}
+            >
+                <Image
+                    alt='Main image home page; sneakers on a skyscraper'
+                    src={skyscraperImg}
+                />
+            </CaptionedImage>
+            
         </section>
     );
 };

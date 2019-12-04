@@ -2,19 +2,17 @@ import React from 'react';
 import {useFill} from '../../hooks/uiHooks';
 
 const SnapchatIcon = props=>{
-    const [fill, setFill] = useFill('#fff9d4');
-    const toggleFill = (newFill)=>{
-        if(!props.fillTogglable){return}
-        setFill(newFill);
-    }
+    //Re-use 'stateful logic' from custom hook:
+    const [fill, setFill] = useFill(props.initialFill);
+
     return(
         <svg 
             alt='snapchat'
             className='snapchat-icon'
             focusable='false'
             height={props.height}
-            onMouseEnter={()=>{toggleFill(props.newFill)}}
-            onMouseLeave={()=>{toggleFill(props.initialFill)}}
+            onMouseEnter={()=>{setFill(props.newFill)}}
+            onMouseLeave={()=>{setFill(props.initialFill)}}
             // viewBox="-62 0 512 512" 
             viewBox="0 -16 511.99949 511"
             width={props.width}

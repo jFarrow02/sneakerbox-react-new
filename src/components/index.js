@@ -6,6 +6,7 @@ import Content from './Content';
 import Copyright from './Copyright';
 import FacebookIcon from './FacebookIcon';
 import Footer from './Footer';
+import Heading from './Heading';
 import Home from './Home';
 import Image from './Image';
 import Link from './Link';
@@ -28,6 +29,7 @@ export {
     Copyright,
     FacebookIcon,
     Footer,
+    Heading,
     Home,
     Image,
     Link,
