@@ -1,6 +1,9 @@
 import React from 'react';
 import './Copyright.scss';
 
+/**
+ * The Copyright component renders copyright information for the application.
+ */
 const Copyright = ()=>{
 
     const now = new Date(Date.now());

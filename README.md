@@ -1,6 +1,11 @@
 # ![Our Logo](https://github.com/jFarrow02/sneakerbox-react-new/blob/dev/public/logo-25pc.png)  Sneakerbox 
 _For athletic shoe enthusiasts everywhere._
 
+Sneakerbox is an e-commerce front-end web application for a fictional athletic shoe company. Sneakerbox is a React application that is created as a companion application to _sneakerbox_, a NodeJS/ExpressJS api server.
+
+Sneakerbox uses functional components wherever possible for human readability and better minification, as well as
+to make use of React hooks [https://reactjs.org/docs/hooks-intro.html](https://reactjs.org/docs/hooks-intro.html).
+
 ## Available Scripts
 
 In the project directory, you can run:
