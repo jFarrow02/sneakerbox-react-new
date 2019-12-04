@@ -1,6 +1,9 @@
 import React, {useState} from 'react';
 import './Cart.scss';
 
+/**
+ * This component renders a thumbnail/summary display of the user's shopping cart contents
+ */
 const Cart = ()=>{
 
     const [itemCount] = useState(0);

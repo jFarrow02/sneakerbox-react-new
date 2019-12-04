@@ -4,6 +4,11 @@ import {
     Cart,
 } from '../index';
 
+/**
+ * 
+ * This component renders a header component to be displayed at the top of each application page. It also contains
+ * a Cart component to display the user's shooping cart.
+ */
 const Banner = props=>{
 
     return(

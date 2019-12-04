@@ -8,6 +8,10 @@ import {
   Nav,
 } from '../index';
 
+/**
+ * The App component is the top-level parent component in the application. It is wrapped in a BrowserRouter
+ * in order to make use of React Router.
+ */
 function App() {
 
   return (

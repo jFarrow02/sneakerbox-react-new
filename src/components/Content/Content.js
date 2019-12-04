@@ -4,6 +4,10 @@ import {resolveComponentName} from '../../services/resolveComponentService';
 import {Redirect, Route} from 'react-router-dom';
 import {navConfig} from '../../data/config';
 
+/**
+ * The Content component creates the application Routes and renders the appropriate component 
+ * associated with the current Route.
+ */
 const Content = ()=>{
 
     return(   
