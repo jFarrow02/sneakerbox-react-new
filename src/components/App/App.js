@@ -17,10 +17,16 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Banner title='SneakerBox'/>
-        <Nav/>
-        <Content/>
-        <Footer/>
+        <div id="row-1">
+          <Banner title='SneakerBox'/>
+        </div>
+        <div id="row-2">
+          <Nav/>
+          <Content/>
+        </div>
+        <div id="row-3">
+          <Footer/>
+        </div>
       </div>
     </BrowserRouter>
     
